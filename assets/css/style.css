@@ -13,6 +13,7 @@
     max-width: 960px;
     margin: 0 auto;
     width:100%;
+    padding: 0;
 }
 
 .headerH1 {
@@ -24,6 +25,7 @@
     line-height: 90px;
     font-size: 18px;
     font-family: 'Georgia', Times, Times New Roman, serif;
+    margin: 0;
 }
 
 .headerH1 a {
@@ -42,8 +44,7 @@
 .navLink {
     text-decoration: none;
     color: #999;
-    justify-content: space-between;
-    padding: 0 30px 0 30px;
+    padding: 0 30px;
 }
 
 .navLink:hover {
@@ -55,13 +56,9 @@
     text-decoration: none;
 }
 
-#menu {
-    display:hidden;
-    width: 40px;
-    height: 40px;
-    background-image:url("../images/menu.png")
+select {
+    display:none;
 }
-
 
 /*-----------------------
             Index
@@ -88,16 +85,11 @@ body, html {
 
 
 .mainContainer {
-    width: 100%;
     max-width: 960px;
-    margin: 0 auto;
-}
-
-.mainContent {
+    margin: 30px 0;
     background-color:#ffffff;
     margin: 30px auto;
-    display: inline-block;
-    padding: 10px;
+    padding: 20px 20px
 }
 
 h2 {
@@ -144,7 +136,9 @@ h3 {
 ------------------------*/
 form{
     padding: 10px;
-    width: 960px;
+    max-width: 930px;
+    width:100%;
+    margin: 0 auto;
 }
 
 label {
@@ -156,6 +150,7 @@ input {
     float: left;
     width: 100%;
     margin: 0 0 10px 0;
+    border-radius: 5px;
 }
 
 #message {
@@ -167,11 +162,11 @@ textarea {
     resize: none;
     display:inline-block;
     width:100%;
-    height: auto;
+    border-radius: 5px;
 }
 
 #submit {
-    max-width: 10%;
+    max-width: 100px;
     height:auto;
 }
 
@@ -193,5 +188,65 @@ footer {
 
 
 /*----------------------
-            Global
+            Responsive
 -----------------------*/
+@media only screen and (max-width: 980px) {
+    .mainContainer {
+        max-width:720px;
+    }
+/*
+    .mainContent {
+        margin: 30px auto;
+        padding: 10px;
+        max-width: 670px;
+    }
+*/
+    form{
+        padding: 10px;
+        width: 100%;
+        clear:both;
+        max-width: 700px;
+    }
+
+}
+
+@media only screen and (max-width: 740px) {
+    .mainContainer {
+        max-width:540px;
+    }
+/*
+    .mainContent {
+        margin: 30px auto;
+        padding: 10px;
+        max-width: 670px;
+    }
+*/
+    form{
+        padding: 10px;
+        width: 100%;
+        clear:both;
+        width: 520px;
+    }
+
+}
+
+@media only screen and (max-width: 580px) {
+    .mainContainer {
+        max-width:320px;
+    }
+
+    form{
+        padding: 10px;
+        width: 100%;
+        clear:both;
+        width: 300px;
+    }
+
+    .headerNav a {
+        padding:0 5px;
+    }
+
+    .navSpacer {
+        display:none;
+    }
+}
