@@ -1,0 +1,197 @@
+/*-----------------------
+            Header
+------------------------*/
+.headerContainer {
+    width:100%;
+    background-color:#fff;
+    height: 90px;
+    text-align: center;
+    border-bottom: 2px solid #cccccc;
+}
+
+.headerContent{
+    max-width: 960px;
+    margin: 0 auto;
+    width:100%;
+}
+
+.headerH1 {
+    float:left;
+    height:90px;
+    background-color: #4aaaa5;
+    padding: 0 30px;
+    color: white;
+    line-height: 90px;
+    font-size: 18px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+.headerH1 a {
+    text-decoration: none;
+    color: white;
+    line-height: 90px;
+    height:90px;
+}
+
+.headerNav{
+    float:right;
+    height: 90px;
+    line-height: 90px;
+}
+
+.navLink {
+    text-decoration: none;
+    color: #999;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+}
+
+.navLink:hover {
+    color: #4aaaa5;
+}
+
+.navSpacer { 
+    color: #4aaaa5;
+    text-decoration: none;
+}
+
+#menu {
+    display:hidden;
+    width: 40px;
+    height: 40px;
+    background-image:url("../images/menu.png")
+}
+
+
+/*-----------------------
+            Index
+------------------------*/
+body, html {
+    background: url("../images/stripes.png");
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+    color: #777777;
+    position: relative;
+    min-height: 100%;
+}
+
+.imgMain {
+    height: auto;
+    max-width: 200px;
+    padding: 20px;
+    margin: 0;
+    float: left;
+}
+
+
+.mainContainer {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.mainContent {
+    background-color:#ffffff;
+    margin: 30px auto;
+    display: inline-block;
+    padding: 10px;
+}
+
+h2 {
+    padding: 25px;
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    margin: 0 auto;
+}
+
+.mainUL {
+    position: relative;
+    left: 10%;
+}
+
+li {
+    list-style-type: disc;
+}
+
+/*-----------------------
+            Portfolio
+------------------------*/
+
+.img {
+    position: relative;
+    display:inline-block;
+}
+
+h3 {
+    position: absolute;
+    top:200px;
+    left:0;
+    width:100%;
+    padding: 20px 0 20px 0;
+    margin: 0;
+    color: white;
+    background-color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    text-align: center;
+}
+
+
+/*-----------------------
+            Contact
+------------------------*/
+form{
+    padding: 10px;
+    width: 960px;
+}
+
+label {
+    float: left;
+    margin: 0 0 5px 0;
+}
+
+input {
+    float: left;
+    width: 100%;
+    margin: 0 0 10px 0;
+}
+
+#message {
+    height: 300px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+textarea {
+    resize: none;
+    display:inline-block;
+    width:100%;
+    height: auto;
+}
+
+#submit {
+    max-width: 10%;
+    height:auto;
+}
+
+/*-----------------------
+            Footer
+------------------------*/
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 75px;
+    background-color: darkgray;
+    text-align: center;
+    width: 100%;
+    border-top: 5px solid #4aaaa5;
+    color: white;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+
+/*----------------------
+            Global
+-----------------------*/
