@@ -73,7 +73,11 @@ body, html {
     color: #777777;
     position: relative;
     min-height: 100%;
+    animation-name: fade-in;
+    animation-duration: .75s;
 }
+
+@keyframes fade-in{from{opacity:0} to{opacity:1}}
 
 .imgMain {
     height: auto;
@@ -173,6 +177,10 @@ textarea {
 /*-----------------------
             Footer
 ------------------------*/
+.push {
+    padding-bottom:50px;
+}
+
 footer {
     position: fixed;
     bottom: 0;
@@ -190,17 +198,11 @@ footer {
 /*----------------------
             Responsive
 -----------------------*/
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 1024px) {
     .mainContainer {
         max-width:720px;
     }
-/*
-    .mainContent {
-        margin: 30px auto;
-        padding: 10px;
-        max-width: 670px;
-    }
-*/
+
     form{
         padding: 10px;
         width: 100%;
@@ -210,17 +212,11 @@ footer {
 
 }
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 760px) {
     .mainContainer {
         max-width:540px;
     }
-/*
-    .mainContent {
-        margin: 30px auto;
-        padding: 10px;
-        max-width: 670px;
-    }
-*/
+
     form{
         padding: 10px;
         width: 100%;
